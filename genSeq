@@ -1,0 +1,14 @@
+void solve(){
+    int n,k; cin >> n >> k;
+    int p = power(n , k)+1;
+    
+    rep(i,0,p){
+        int num = i;
+        
+        rep(j,0,n){
+            cout << (num%k)+1 << " ";
+            num /= k;
+        }
+        cout << "\n";
+    }
+}
